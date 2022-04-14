@@ -137,11 +137,23 @@ input#menu {
 
 @media screen and (min-width: 768px){
     
+    /* Home logo */
     .header__homeLogo{
         margin-left: 15vh;
         transform: scale(1);
     }
 
+    .header__homeLogo:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .header__homeLogo:not(:hover){
+        transform: scale(1);
+        transition: 1s;
+    }
+    /* --------- */
+    
     .header__nav {
         display: initial;
         position: inherit;
@@ -158,7 +170,7 @@ input#menu {
 
     .header__nav ul li a:hover{
         color: orange;
-        transition:  1.5s;
+        transition:  1s;
     }
 
     .header__burgerMenu {
