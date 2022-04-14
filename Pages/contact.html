@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./favicon/logo.jpg"/>
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css">
+    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/dab5819558.js" crossorigin="anonymous"></script>
+</head>
+<body class="contact__body">
+    <header class="home__header">
+        <div class="header__homeLogo">
+            <a href="../index.html"><img src="./img/logo_1313.jpeg" alt="logo"></a>
+        </div>
+        <!-- ----------------- -->
+        <!-- Burger Menu only mobile-->
+        <label for="menu" class="header__burgerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+          <input type="checkbox" id="menu">
+        <nav class="header__nav">
+            <label for="menu" class="header__closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+        <!-- Burger Menu only mobile-->
+        <!-- ----------------- -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./artist.html">Artistas</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <li><a href="./about.html">Nosotros</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact__main">
+        <!-- ----------------- -->
+        <!-- cover -->
+        <section>
+            <div class="contact__main__imgContainer">
+                <img class="contact__main__sectionImg" src="./img/contact_layout.jpg" alt="Fondo musical">
+            </div>
+        <!-- cover -->
+        <!-- ----------------- -->
+        </section>
+        <h1 class="mainTitle">Contactanos</h1>
+        <section class="contact__section__form">
+            <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="userName" id="name" required>
+                    <label for="mail">Correo electrónico</label>
+                    <input type="text" name="userMail" id="mail" required>
+                    <label for="phone">Teléfono</label>
+                    <input type="text" name="userPhone" id="phone" required>
+                    <label for="consultation">Envianos tu consulta</label>
+                    <textarea class="contact__main__form__textarea" name="userConsultation" id="consultation" cols="30" rows="10" required></textarea>
+                    <div class="contact__main__form__buttons">
+                        <input id="sendButton" type="submit">
+                        <input id="resetButton" type="reset">   
+                    </div>
+            </form>
+        </section>
+        <!-- ----------------- -->
+        <!-- Only for a little of space -->
+        <div class="contact__emptyDiv"></div>
+        <div class="home__main__emptyContainer"></div>
+        <!-- Only for a little of space -->
+        <!-- ----------------- -->
+    </main> 
+    <footer class="footer">
+        <div class="footer__container">
+            <ul>
+                <li>teléfono: 11 6161-6161</li>
+                <li>email mail@server.com</li>
+            </ul>            
+            <ul class="footer__socialList">
+                <a href="https://www.instagram.com/1313_beats/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCAhF8L-JT6NPXYlPtAcB0kA/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+            <h5>made by PDesigns</h5>
+            <h6>© 33 Productora - Todos los Derechos Reservados | Desarrollo Web</h6>
+        </div>       
+    </footer>
+</body>
+</html>
