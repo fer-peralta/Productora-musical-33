@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="./favicon/logo.jpg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheets/stylesheet.css">
     <title>Servicios</title>
     <script src="https://kit.fontawesome.com/dab5819558.js" crossorigin="anonymous"></script>
@@ -46,71 +47,76 @@
         <!-- cover -->
         <!-- ----------------- -->
         <h1 class="mainTitle">Servicios</h1>
-        <section class="services__section services_subtitle">
+        <section class="services__section services_subtitle container-fluid">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus officia deserunt harum ex aliquam aliquid quia vitae dolor modi, eum voluptates veniam est commodi perferendis quod accusantium qui eveniet dignissimos sunt facilis perspiciatis? Aperiam quasi animi, sunt deleniti non molestias reprehenderit, voluptate esse et dolorem eius possimus ut dolores.
         </section>
         <!-- content -->
-        <section class="services__section services__sectionsWithArticles">
-            <article>
-                <div class="services__section__articleImg">
-                    <img src="./img/services_logo_record.png" alt="Grabacion">
-                </div>
-                <div class="services__section__articleText">
-                    <h2>Grabación</h2>
-                    <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
-                    <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>
+        <section class="services__section services__sectionsWithArticles container-fluid row">
+            <article class="col-md-6 col-lg-4">
+                <div class="services__section__articleImg row my-2">
+                    <img src="./img/services_logo_record.png" class="col-6" alt="Grabacion">
+                    <div class="services__section__articleText col-6">
+                        <h3>Grabación</h3>
+                        <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
+                        <!-- <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p> -->
+                    </div>
+                </div> 
+            </article>
+            <article class="col-md-6 col-lg-4">
+                <div class="services__section__articleImg row my-2">
+                    <img src="./img/services_logo_pstproduction.png" class="col-6" alt="Post-produccion">
+                    <div class="services__section__articleText col-6">
+                        <h3>Post-prod</h3>
+                        <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
+                        <!-- <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>-->
+                    </div>
+                </div>  
+            </article>
+            <article class="col-md-6 col-lg-4">
+                <div class="services__section__articleImg row my-2">
+                    <img src="./img/services_logo_learning.png" class="col-6" alt="Formacion">
+                    <div class="services__section__articleText col-6">
+                        <h3>Formación</h3>
+                        <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
+                        <!-- <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p> -->
+                    </div>
                 </div>
             </article>
-            <article>
-                <div class="services__section__articleImg">
-                    <img src="./img/services_logo_pstproduction.png" alt="Post-produccion">
-                </div>
-                <div class="services__section__articleText">
-                    <h2>Post-producción</h2>
-                    <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
-                    <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>                </div>
+            <article class="col-md-6 col-lg-4">
+                <div class="services__section__articleImg row my-2">
+                    <img src="./img/services_logo_composition.png" class="col-6" alt="Composicion">
+                    <div class="services__section__articleText col-6">
+                        <h3>Composición</h3>
+                        <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
+                        <!-- <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p> -->
+                    </div>
+                </div> 
             </article>
-            <article>
-                <div class="services__section__articleImg">
-                    <img src="./img/services_logo_learning.png" alt="Formacion">
+            <article class="col-md-6 col-lg-4">
+                <div class="services__section__articleImg row my-2">
+                    <img src="./img/services_logo_sessionist.png" class="col-6" alt="Sesionistas">
+                    <div class="services__section__articleText col-6">
+                        <h3>Sesionistas</h3>
+                        <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
+                        <!-- <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p> -->
+                    </div>
                 </div>
-                <div class="services__section__articleText">
-                    <h2>Formación</h2>
-                    <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
-                    <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>                </div>
             </article>
-            <article>
-                <div class="services__section__articleImg">
-                    <img src="./img/services_logo_composition.png" alt="Composicion">
-                </div>
-                <div class="services__section__articleText">
-                    <h2>Composición</h2>
-                    <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
-                    <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>                </div>
-            </article>
-            <article>
-                <div class="services__section__articleImg">
-                    <img src="./img/services_logo_sessionist.png" alt="Sesionistas">
-                </div>
-                <div class="services__section__articleText">
-                    <h2>Sesionistas</h2>
-                    <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
-                    <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>                </div>
-            </article>
-            <article>
-                <div class="services__section__articleImg">
-                    <img src="./img/services_logo_marketing.png" alt="Marketing">
-                </div>
-                <div class="services__section__articleText">
-                    <h2>Marketing</h2>
-                    <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
-                    <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p>                </div>
+            <article class="col-md-6 col-lg-4">
+                <div class="services__section__articleImg row my-2">
+                    <img src="./img/services_logo_marketing.png" class="col-6" alt="Marketing">
+                    <div class="services__section__articleText col-6">
+                        <h3>Marketing</h3>
+                        <p class="services__article__descriptionMobile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, unde!</p>
+                        <!-- <p class="services__article__descriptionDesktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus tenetur excepturi corporis numquam, itaque sapiente natus earum, odit, deserunt expedita. Voluptatum impedit quos aut repudiandae, illo unde inventore dicta.</p> -->
+                    </div>
+                </div>  
             </article>       
         </section>
         <!-- ----------------- -->
         <!-- Only for a little of space -->
         <div class="contact__emptyDiv"></div>
-        <div class="home__main__emptyContainer"></div>
+        <!-- <div class="home__main__emptyContainer"></div> -->
         <!-- Only for a little of space -->
         <!-- ----------------- -->
     </main>
@@ -126,9 +132,10 @@
                 <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.youtube.com/channel/UCAhF8L-JT6NPXYlPtAcB0kA/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </ul>
-            <h5>made by PDesigns</h5>
+            <h6>made by PDesigns</h6>
             <h6>© 33 Productora - Todos los Derechos Reservados | Desarrollo Web</h6>
         </div>       
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
