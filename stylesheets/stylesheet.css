@@ -78,8 +78,16 @@ header{
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(120, 114, 114, 0.65) 100%);
+    background: linear-gradient(to right,rgba(125, 89, 27, 0.65),black, rgba(255,0,0,0));
+    background-size: 400% 400%;
+    animation: fondo-anim 3s ease infinite;
 }
+
+@keyframes fondo-anim{
+    0%{background-position: 0 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+  }
 
 .header__nav ul li {
     padding: 0.5rem;
@@ -196,7 +204,7 @@ input#menu {
 
 .index__body{
     display: grid;
-    grid-template-rows: 8.4rem 40rem 7rem;
+    grid-template-rows: 8.4rem 33rem 8rem;
 }
 
 /* MAIN */
@@ -475,15 +483,24 @@ input#menu {
     color: rgba(53, 52, 52, 0.908);
 }
 
-/* .services__section{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-} */
-/*
-.services__section__articleImg{
-    margin-top: 2rem;
-    height: 50%;
+
+
+.services__section{
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+    margin-bottom: 2rem;
 }
+
+.services__section article{
+    margin-bottom: 2rem;
+}
+
+ 
+.services__section__articleImg img{
+    max-height: 10rem!important;
+    max-width: 10rem!important;
+}
+
 /*
 .services__section__articleImg img{
     margin-top: 2rem;
@@ -598,7 +615,7 @@ input#menu {
     
     .about__body{
         display: grid;
-        grid-template-rows: 8.4rem 55rem 6.5rem;
+        grid-template-rows: 8.4rem 55rem 8.2rem;
     }
 
     .about__main__section{
@@ -606,12 +623,12 @@ input#menu {
         margin-right: 15vh;
     }
 
-    .about__mainTitle__desktop{
-        display: block
-    }
+}
 
-    .about__mainTitle__mobile{
-        display: none;
+@media screen and (min-width: 1100px){
+    
+    .about__body{
+        grid-template-rows: 8.4rem 50rem 8.2rem;
     }
 
 }
@@ -631,14 +648,14 @@ input#menu {
 
 .contact__body{
     display: grid;
-    grid-template-rows: 8.4rem 76.5rem 6.5rem;
+    grid-template-rows: 8.4rem 60rem 8.2rem;
 }
 
 /* MAIN */
 
 .contact__main{
     display: grid;
-    grid-template-rows: 18.75rem 5rem 35rem 10rem 8rem;
+    grid-template-rows: 18.75rem 5rem 32rem 4.2rem;
 }
 
 .contact__main__imgContainer{
@@ -726,6 +743,22 @@ footer div.footer__container ul.footer__socialList i{
 
 ul.footer__socialList i{
     margin-right: 0.6rem;
+}
+
+footer ul{
+    margin-bottom: auto;
+}
+
+footer ul span{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    
+    footer ul span{
+        display: inline-block;
+    }
+
 }
 
 /* END FOOTER */
