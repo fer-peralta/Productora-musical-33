@@ -1,0 +1,33 @@
+.about__main__imgContainer {
+  height: 18.75rem;
+
+  .about__main__sectionImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.about__main__section{
+  margin-top: 1.4rem;
+  margin-left: 4vh;
+  margin-right: 4vh;
+  color: rgba(53, 52, 52, 0.908);
+}   
+  
+@media screen and (min-width: 768px){
+    
+  .about__body {
+    display: grid;
+    grid-template-rows: 8.4rem 55rem 8.2rem;
+  }
+
+}
+  
+@media screen and (min-width: 1100px){
+  
+  .about__body{
+    grid-template-rows: 8.4rem 50rem 8.2rem;
+  }
+
+}
