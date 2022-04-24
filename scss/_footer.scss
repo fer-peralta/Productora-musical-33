@@ -1,0 +1,39 @@
+
+footer{
+    background-color: black;
+
+    ul {
+      margin-bottom: auto;
+
+      span {
+        display: none;
+      }
+    }
+
+    div.footer__container {
+      background-color: black;
+      color: white;
+      text-align: center;
+
+      ul.footer__socialList {
+
+        i {
+          color: white;
+          font-size: 2rem;
+          margin-right: 0.6rem;
+        }
+      }
+    }
+  }
+
+  
+@media screen and (min-width: 768px){
+  
+  footer {
+    ul {
+      span {
+        display: inline-block;
+      }  
+    }  
+  } 
+}
