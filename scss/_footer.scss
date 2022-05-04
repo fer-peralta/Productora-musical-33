@@ -1,3 +1,4 @@
+@import "maps";
 
 footer{
     background-color: black;
@@ -15,14 +16,14 @@ footer{
       color: white;
       text-align: center;
 
-      ul.footer__socialList {
+      .footer__socialList {
 
         i {
-          color: white;
-          font-size: 2rem;
-          margin-right: 0.6rem;
+          color: map-get($social_styles, color);
+          font-size: map-get($social_styles, font-size);
+          margin-right: map-get($social_styles, margin-right);
         }
-      }
+      }      
     }
   }
 

@@ -1,6 +1,7 @@
 /* ++++++++++++++++++++++++++++++++++++ */
 /* HEADER ALL PAGES */ 
 /* ++++++++++++++++++++++++++++++++++++ */
+@import "mixins";
 
 header {
     display: flex;
@@ -14,13 +15,11 @@ header {
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
 
     .header__homeLogo {
-        width: 7rem;
-        height: 7rem;
+        @include sizeswh(7rem,7rem);
         transform: scale(0.7);
 
         a img{
-            height: 100%;
-            width: 100%;
+            @include sizeswh(100%,100%);
         }
 
     }
@@ -29,8 +28,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
+        @include sizeswh(2.5rem,2.5rem);
         font-size: 2rem;
         background-color: black;
         border: none;
@@ -54,8 +52,7 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%; 
-        height: 100%;
+        @include sizeswh(100%,100%);
         background-color: black;
 
         ul {
@@ -63,8 +60,7 @@ header {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 100%;
+            @include sizeswh(100%,100%);
             background: linear-gradient(to right,rgba(125, 89, 27, 0.65),black, rgba(255,0,0,0));
             background-size: 400% 400%;
             animation: fondo-anim 3s ease infinite;

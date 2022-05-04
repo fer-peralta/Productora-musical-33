@@ -1,10 +1,11 @@
+@import "mixins";
+
 .services__main__imgContainer {
     height: 18.75rem;
 
     .services__main__sectionImg {
       object-fit: cover;
-      height: 100%;
-      width: 100%;
+      @include sizeswh(100%,100%)
     }
   }
 
