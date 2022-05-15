@@ -1,5 +1,5 @@
 .about__main__imgContainer {
-  height: 18.75rem;
+  height: 300px;
 
   .about__main__sectionImg {
     object-fit: cover;
@@ -9,25 +9,56 @@
 }
 
 .about__main__section{
-  margin-top: 1.4rem;
+  margin-top: 20px;
   margin-left: 4vh;
   margin-right: 4vh;
   color: rgba(53, 52, 52, 0.908);
 }   
-  
-@media screen and (min-width: 768px){
-    
-  .about__body {
-    display: grid;
-    grid-template-rows: 8.4rem 55rem 8.2rem;
-  }
+
+.about__secondSection {
+
+  margin-bottom: 50px;
 
 }
   
-@media screen and (min-width: 1100px){
-  
-  .about__body{
-    grid-template-rows: 8.4rem 50rem 8.2rem;
+@media screen and (min-width: 768px){
+    
+  .about__mainContainer{
+
+    font-size: medium;
+    
+    .about__main__section {
+      @include marginlr(8vh,8vh);
+    }
+
   }
 
+}
+
+@media screen and (min-width: 992px){
+  
+  .about__mainContainer{
+
+    font-size: large;
+    
+    .about__main__section {
+      @include marginlr(8vh,8vh);
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1350px){
+  
+  .about__mainContainer{
+
+    font-size: larger;
+    
+    .about__main__section {
+      @include marginlr(15vh,15vh);
+    }
+
+  }
+  
 }

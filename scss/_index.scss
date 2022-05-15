@@ -1,71 +1,62 @@
 @import "mixins";
 
-.index__body {
-  display: grid;
-  grid-template-rows: 8.4rem 33rem 8rem;
+.home__main {
+  background-color: black;
+  min-height: 500px;
 
-  .home__main {
-    background-color: black;
-    display: grid;
-    grid-template-rows: 69% 31%;
-  
-    .main__container {
-      position: relative;
-      display: inline-block;
-      
-      .home__main__background {
-        @include sizeswh(100%,120%);
-        object-fit: cover;
-      }
+  .main__container {
+    position: relative;
+    display: inline-block;
+    
+    
+    .home__main__background {
+      @include sizeswh(100%,100%);
+      object-fit: cover;
+      min-height: 400px;
+    }
+  }
+
+  h1.mainTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(241, 236, 236, 0.895);
+    font-size: 3rem;
+    word-wrap: normal;
+    text-shadow: rgb(36, 35, 35) 0 2px;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    animation: colorChange 5s infinite;
+
+    @keyframes colorChange {
+      0% {opacity:1;}
+      25% {opacity:1;}
+      50% {opacity:1;color: rgba(210, 148, 32, 0.898);}
+      75% {opacity:1;}
     }
 
-    h1.mainTitle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: rgba(241, 236, 236, 0.895);
-      font-size: 3rem;
-      word-wrap: normal;
-      text-shadow: rgb(36, 35, 35) 0 2px;
-      font-family: 'Raleway';
-      text-transform: uppercase;
-      animation: colorChange 5s infinite;
-
-      @keyframes colorChange {
-        0% {opacity:1;}
-        25% {opacity:1;}
-        50% {opacity:1;color: rgba(210, 148, 32, 0.898);}
-        75% {opacity:1;}
-      }
-
-    }
   }
 }
  
   
 @media screen and (min-width: 768px){
-    
-  .index__body {
-      display: grid;
-      grid-template-rows: 8.4rem 52rem 6.5rem;
+  
+  index__body {
 
-    .home__main {
-      background-color: black;
-      display: grid;
-      grid-template-rows: 82% 18%;
-
-      h1.mainTitle {
-        font-size: 5rem;
-        text-shadow: rgb(36, 35, 35) 0 3px;
-
-        @keyframes colorChange {
-          0% {opacity:1;}
-          25% {opacity:1;}
-          50% {opacity:1;color: rgba(223, 203, 165, 0.898);}
-          75% {opacity:1;}
-        }
+    h1.mainTitle {
+      font-size: 5rem;
+      text-shadow: rgb(36, 35, 35) 0 3px;
+  
+      @keyframes colorChange {
+        0% {opacity:1;}
+        25% {opacity:1;}
+        50% {opacity:1;color: rgba(223, 203, 165, 0.898);}
+        75% {opacity:1;}
       }
     }
+
   }
+
+  
 }

@@ -1,7 +1,7 @@
 @import "mixins";
 
 .services__main__imgContainer {
-    height: 18.75rem;
+    height: 300px;
 
     .services__main__sectionImg {
       object-fit: cover;
@@ -10,15 +10,17 @@
   }
 
 .services__section {    
-  margin-bottom: 2rem; 
-  
+  margin-bottom: 20px; 
+  @include marginlr3vh;
+
   article {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
   }
+
 }
 
 .services_subtitle {
-  margin-top: 1.4rem;
+  margin-top: 20px;
   color: rgba(53, 52, 52, 0.908);
 }
 
@@ -28,8 +30,50 @@
   .services__section__articleImg {
 
     img {
-      max-height: 10rem!important;
-      max-width: 10rem!important;
+      max-height: 160px!important;
+      max-width: 160px!important;
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+
+  .services__main{
+
+    font-size: medium;
+    
+    .services__section {
+      @include marginlr(8vh,8vh);
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 992px){
+  
+  .services__main{
+
+    font-size: large;
+    
+    .services__section {
+      @include marginlr(8vh,8vh);
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1350px){
+  
+  .services__main{
+
+    font-size: larger;
+    
+    .services__section {
+      @include marginlr(15vh,15vh);
+    }
+
+  }
+  
 }

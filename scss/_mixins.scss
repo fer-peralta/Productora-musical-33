@@ -2,3 +2,11 @@
     width: $width;
     height: $height;
 }
+@mixin marginlr3vh{
+    margin-left: 3vh!important;
+    margin-right: 3vh!important;
+}
+@mixin marginlr($left,$right){
+    margin-left: $left!important;
+    margin-right: $right!important;
+}
