@@ -358,6 +358,8 @@ header {
       margin-left: 15vh !important;
       margin-right: 15vh !important; }
     .about__mainContainer .about__secondSection {
+      min-height: 100px; }
+    .about__mainContainer .about__secondSection {
       min-height: 100px; } }
 
 .contact__body {
