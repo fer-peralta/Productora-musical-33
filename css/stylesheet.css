@@ -356,7 +356,9 @@ header {
     font-size: larger; }
     .about__mainContainer .about__main__section {
       margin-left: 15vh !important;
-      margin-right: 15vh !important; } }
+      margin-right: 15vh !important; }
+    .about__mainContainer .about__secondSection {
+      min-height: 100px; } }
 
 .contact__body {
   display: grid;

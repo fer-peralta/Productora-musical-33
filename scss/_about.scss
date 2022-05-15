@@ -57,6 +57,13 @@
     
     .about__main__section {
       @include marginlr(15vh,15vh);
+
+    }
+
+    .about__secondSection {
+
+      min-height: 100px;
+
     }
 
   }
